@@ -10,6 +10,7 @@
 config:
   - config_ball_devices.yaml
   - config_coils.yaml
+  - config_lights.yaml
   - config_switches.yaml
 
 modes:
