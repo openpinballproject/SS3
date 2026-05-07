@@ -15,3 +15,15 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# MPF ignores
+__pycache__/
+*.py[cod]
+__mpfcache__
+.idea
+logs
+data
+*.egg-info
+.DS_Store
+.vscode
+gmc_slides_and_widgets/addons

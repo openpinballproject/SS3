@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://cwdyj7pubd7j0"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
+[ext_resource type="Texture2D" uid="uid://c00xoi2hel8k0" path="res://images/sal_empty.jpg" id="2_m2s46"]
+[ext_resource type="Texture2D" uid="uid://da4aj5gjdffbm" path="res://images/sal_background.jpg" id="2_nlvwg"]
+[ext_resource type="Script" uid="uid://dpe3dq8axt3g7" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="3_hhxni"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_cq3lo"]
+[ext_resource type="Texture2D" uid="uid://b2v4sgg42cqvb" path="res://images/sal_noscore.png" id="4_f161n"]
+[ext_resource type="FontFile" uid="uid://d2x4aob6p3jgb" path="res://fonts/LCDM2N__.TTF" id="4_twbla"]
+
+[node name="Attract" type="Control" unique_id=67802117]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 1024.0
+script = ExtResource("1_r1mnt")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="background" type="Sprite2D" parent="." unique_id=1569995929]
+position = Vector2(640, 512)
+texture = ExtResource("2_nlvwg")
+
+[node name="MPFCarousel" type="Control" parent="." unique_id=867253004]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_hhxni")
+carousel_name = "attract"
+metadata/_custom_type_script = "uid://dpe3dq8axt3g7"
+
+[node name="attract" type="Sprite2D" parent="MPFCarousel" unique_id=1341292981]
+position = Vector2(640, 512)
+texture = ExtResource("2_m2s46")
+
+[node name="credits" type="Label" parent="MPFCarousel/attract" unique_id=1524226058]
+offset_left = -110.0
+offset_top = 391.0
+offset_right = 191.0
+offset_bottom = 471.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "FREE PLAY"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "credits_string"
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="high_score_0" type="Label" parent="MPFCarousel/attract" unique_id=1867107023]
+offset_left = -566.0
+offset_top = 247.0
+offset_right = -160.0
+offset_bottom = 315.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "high_score_0"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="high_score_1" type="Label" parent="MPFCarousel/attract" unique_id=1406213810]
+offset_left = 173.0
+offset_top = 242.0
+offset_right = 579.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "high_score_1"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="high_score_2" type="Label" parent="MPFCarousel/attract" unique_id=768707341]
+offset_left = -567.0
+offset_top = 397.0
+offset_right = -161.0
+offset_bottom = 465.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "high_score_2"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="high_score_3" type="Label" parent="MPFCarousel/attract" unique_id=1964966429]
+offset_left = 171.0
+offset_top = 394.0
+offset_right = 577.0
+offset_bottom = 462.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "high_score_3"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="last_scores" type="Sprite2D" parent="MPFCarousel" unique_id=970974671]
+position = Vector2(640, 512)
+texture = ExtResource("2_m2s46")
+
+[node name="credits" type="Label" parent="MPFCarousel/last_scores" unique_id=386921981]
+offset_left = -110.0
+offset_top = 391.0
+offset_right = 191.0
+offset_bottom = 471.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "FREE PLAY"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "credits_string"
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player_0" type="Label" parent="MPFCarousel/last_scores" unique_id=1100196089]
+offset_left = -566.0
+offset_top = 247.0
+offset_right = -160.0
+offset_bottom = 315.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "player1_score"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player_1" type="Label" parent="MPFCarousel/last_scores" unique_id=250352863]
+offset_left = 173.0
+offset_top = 242.0
+offset_right = 579.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "player2_score"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player_2" type="Label" parent="MPFCarousel/last_scores" unique_id=957503151]
+offset_left = -567.0
+offset_top = 397.0
+offset_right = -161.0
+offset_bottom = 465.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "player3_score"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player_3" type="Label" parent="MPFCarousel/last_scores" unique_id=277161373]
+offset_left = 171.0
+offset_top = 394.0
+offset_right = 577.0
+offset_bottom = 462.0
+theme_override_colors/font_color = Color(1, 0.50980395, 0.015686275, 1)
+theme_override_fonts/font = ExtResource("4_twbla")
+theme_override_font_sizes/font_size = 65
+text = "00"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("4_cq3lo")
+variable_type = 2
+variable_name = "player4_score"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="logos" type="Sprite2D" parent="MPFCarousel" unique_id=745187738]
+position = Vector2(640, 512)
+texture = ExtResource("4_f161n")

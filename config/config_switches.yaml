@@ -1,0 +1,110 @@
+#config_version=6
+
+switches:
+  # Cabinet switches
+  s_flipper_left:
+    number:
+    tags: left_flipper
+  s_flipper_right:
+    number:
+    tags: right_flipper
+  s_slam_tilt:
+    number:
+  s_tilt:
+    number:
+  s_coin_drop:
+    number:
+  s_start:
+    number:
+    tags: start
+
+  # Trough Switches
+  s_trough_1:
+    number:
+  # HRS:  To be added, doesn't exist yet
+  s_trough_2:
+    number:
+  s_plunger_lane:
+    number:
+
+  # Playfield switches (attached to devices)
+  # Pop bumpers
+  s_upper_left_pop:
+    number:
+  s_upper_center_pop:
+    number:
+  s_bottom_upper_pop:
+    number:
+  s_bottom_lower_pop:
+    number:
+
+  # Drop bank targets
+  s_drop_bank_missed:
+    number:
+  s_drop_bank_target_1s:
+    number:
+  s_drop_bank_target_2h:
+    number:
+  s_drop_bank_target_3o:
+    number:
+  s_drop_bank_target_4o:
+    number:
+  s_drop_bank_target_5t:
+    number:
+  s_drop_bank_target_6e:
+    number:
+  s_drop_bank_target_7r:
+    number:
+
+  s_kickout_hole:
+    number:
+
+  # Powered sling
+  s_bottom_left_sling:
+    number:
+
+  # Spinner
+  s_spinner:
+    number:
+
+  # Playfield lane switches
+  s_lane_upper_s:
+    number:
+  s_lane_upper_h:
+    number:
+  s_lane_upper_a:
+    number:
+  s_lane_center_r:
+    number:
+  s_lane_center_p:
+    number:
+  s_lane_center_e:
+    number:
+  s_lane_outlane:
+    number:
+  s_lane_inlane:
+    number:
+  s_lane_jackpot:
+    number:
+  s_lane_center_low:
+    number:
+
+  # Playfield target switches
+  s_target_mine:
+    number:
+  s_target_hideout:
+    number:
+
+  # Playfield rubber switches
+  s_upper_rubber:
+    number:
+  s_center_right:
+    number:
+  s_below_kickout:
+    number:
+  s_above_drop_target:
+    number:
+  s_bottom_right_rubber:
+    number:
+  s_bottom_right_low_rubber:
+    number:

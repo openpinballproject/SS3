@@ -1,0 +1,34 @@
+#config_version=6
+
+# Attract mode that starts when the machine boots up, stops
+# whenever a game is started, and re-starts after the game ends.
+mode_settings:
+  selectable_items:
+    - attract
+    - last_scores
+    - logos
+  next_item_events: s_flipper_right_active, timer_attract_carousel_timer_complete
+  previous_item_events: s_flipper_left_active
+
+slide_player:
+  mode_attract_started: attract
+
+sound_player:
+  mode_attract_started:
+    GoodBadUgly:
+      bus: music
+
+timers:
+  attract_carousel_timer:
+    end_value: 1
+    tick_interval: 5s
+    start_running: true
+    control_events:
+      - event: item_highlighted
+        action: restart
+      - event: flipper_cradle
+        action: stop
+      - event: flipper_cradle_release
+        action: restart
+      - event: carousel_item_highlighted
+        action: restart

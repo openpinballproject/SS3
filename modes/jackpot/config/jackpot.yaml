@@ -1,0 +1,37 @@
+#config_version=6
+
+# Jackpot mode that starts after completing a mode
+# HRS:  Currently started by shooting kickout hole
+
+mode:
+  start_events: start_mode_jackpot
+  stop_events: stop_mode_jackpot
+  priority: 1000
+
+shots:
+  jackpot:
+    switch: s_kickout_hole
+
+event_player:
+  timer_jackpot_timer_complete: stop_mode_jackpot
+
+slide_player:
+  mode_jackpot_started: jackpot_slide
+
+sound_player:
+  jackpot_hit:
+    bullet:
+      bus: effects
+
+timers:
+  jackpot_timer:
+    end_value: 1
+    tick_interval: 30s
+    start_running: true
+    control_events:
+      - event: jackpot_hit
+        action: restart
+
+variable_player:
+  jackpot_hit:
+    score: 100
