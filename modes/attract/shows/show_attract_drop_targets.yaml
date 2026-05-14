@@ -1,0 +1,93 @@
+#show_version=6
+##! show: show_attract_drop_targets
+
+- duration: 1
+  lights:
+    l_drop_target_s: off
+    l_drop_target_h: off
+    l_drop_target_o1: off
+    l_drop_target_o2: off
+    l_drop_target_t: off
+    l_drop_target_e: off
+    l_drop_target_r: off
+- duration: 1
+  lights:
+    l_drop_target_s: on
+    l_drop_target_h: on
+    l_drop_target_o1: on
+    l_drop_target_o2: on
+    l_drop_target_t: on
+    l_drop_target_e: on
+    l_drop_target_r: on
+- duration: 1
+  lights:
+    l_drop_target_s: off
+    l_drop_target_h: off
+    l_drop_target_o1: off
+    l_drop_target_o2: off
+    l_drop_target_t: off
+    l_drop_target_e: off
+    l_drop_target_r: off
+- duration: 1
+  lights:
+    l_drop_target_s: on
+- duration: 1
+  lights:
+    l_drop_target_s: off
+    l_drop_target_h: on
+- duration: 1
+  lights:
+    l_drop_target_h: off
+    l_drop_target_o1: on
+- duration: 1
+  lights:
+    l_drop_target_o1: off
+    l_drop_target_o2: on
+- duration: 1
+  lights:
+    l_drop_target_o2: off
+    l_drop_target_t: on
+- duration: 1
+  lights:
+    l_drop_target_t: off
+    l_drop_target_e: on
+- duration: 1
+  lights:
+    l_drop_target_e: off
+    l_drop_target_r: on
+- duration: 1
+  lights:
+    l_drop_target_e: on
+    l_drop_target_r: off
+- duration: 1
+  lights:
+    l_drop_target_e: off
+    l_drop_target_t: on
+- duration: 1
+  lights:
+    l_drop_target_t: off
+    l_drop_target_o2: on
+- duration: 1
+  lights:
+    l_drop_target_o2: off
+    l_drop_target_o1: on
+- duration: 1
+  lights:
+    l_drop_target_o1: off
+    l_drop_target_h: on
+- duration: 1
+  lights:
+    l_drop_target_h: off
+    l_drop_target_s: on
+- duration: 1
+  lights:
+    l_drop_target_s: off
+- duration: 1
+  lights:
+    l_drop_target_s: on
+    l_drop_target_h: on
+    l_drop_target_o1: on
+    l_drop_target_o2: on
+    l_drop_target_t: on
+    l_drop_target_e: on
+    l_drop_target_r: on

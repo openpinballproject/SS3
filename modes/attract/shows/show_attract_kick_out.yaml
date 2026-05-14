@@ -1,0 +1,45 @@
+#show_version=6
+##! show: show_attract_kick_out
+
+- duration: 1
+  lights:
+    l_kickout_duel: off
+    l_kickout_pick_job: off
+    l_2x: off
+    l_3x: off
+    l_4x: off
+    l_5x: off
+- duration: 1
+  lights:
+    l_kickout_duel: on
+    l_kickout_pick_job: on
+    l_2x: on
+    l_3x: on
+    l_4x: on
+    l_5x: on
+- duration: 1
+  lights:
+    l_kickout_duel: off
+    l_kickout_pick_job: off
+    l_2x: off
+    l_3x: off
+    l_4x: off
+    l_5x: off
+- duration: 1
+  lights:
+    l_kickout_duel: on
+- duration: 1
+  lights:
+    l_kickout_pick_job: on
+- duration: 1
+  lights:
+    l_2x: on
+- duration: 1
+  lights:
+    l_3x: on
+- duration: 1
+  lights:
+    l_4x: on
+- duration: 1
+  lights:
+    l_5x: on

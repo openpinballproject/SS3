@@ -1,0 +1,95 @@
+#show_version=6
+##! show: show_attract_modes
+
+- duration: 1
+  lights:
+    l_shoot_again: off
+    l_mode_sharpe: off
+    l_mode_sniper: off
+    l_mode_track_bandit: off
+    l_mode_check_hideout: off
+    l_mode_kill_all: off
+    l_mode_target_practice: off
+    l_mode_bar_fight: off
+    l_mode_hustle_jive: off
+    l_mode_duel: off
+    l_mode_posse: off
+    l_mode_ride_for_help: off
+    l_rookie: off
+    l_deputy: off
+    l_sheriff: off
+    l_marshal: off
+- duration: 1
+  lights:
+    l_shoot_again: on
+    l_mode_sharpe: on
+    l_mode_sniper: on
+    l_mode_track_bandit: on
+    l_mode_check_hideout: on
+    l_mode_kill_all: on
+    l_mode_target_practice: on
+    l_mode_bar_fight: on
+    l_mode_hustle_jive: on
+    l_mode_duel: on
+    l_mode_posse: on
+    l_mode_ride_for_help: on
+    l_rookie: on
+    l_deputy: on
+    l_sheriff: on
+    l_marshal: on
+- duration: 1
+  lights:
+    l_shoot_again: off
+    l_mode_sharpe: off
+    l_mode_sniper: off
+    l_mode_track_bandit: off
+    l_mode_check_hideout: off
+    l_mode_kill_all: off
+    l_mode_target_practice: off
+    l_mode_bar_fight: off
+    l_mode_hustle_jive: off
+    l_mode_duel: off
+    l_mode_posse: off
+    l_mode_ride_for_help: off
+    l_rookie: off
+    l_deputy: off
+    l_sheriff: off
+    l_marshal: off
+- duration: 1
+  lights:
+    l_shoot_again: on
+- duration: 1
+  lights:
+    l_mode_sharpe: on
+- duration: 1
+  lights:
+    l_mode_sniper: on
+    l_mode_track_bandit: on
+- duration: 1
+  lights:
+    l_mode_check_hideout: on
+    l_mode_kill_all: on
+- duration: 1
+  lights:
+    l_mode_target_practice: on
+    l_mode_bar_fight: on
+- duration: 1
+  lights:
+    l_mode_hustle_jive: on
+    l_mode_duel: on
+- duration: 1
+  lights:
+    l_mode_posse: on
+    l_mode_ride_for_help: on
+- duration: 1
+  lights:
+    l_rookie: on
+- duration: 1
+  lights:
+    l_deputy: on
+- duration: 1
+  lights:
+    l_sheriff: on
+- duration: 1
+  lights:
+    l_marshal: on

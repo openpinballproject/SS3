@@ -1,0 +1,77 @@
+#show_version=6
+##! show: show_attract_inlanes
+
+- duration: 1
+  lights:
+    l_rollover_s: off
+    l_rollover_h: off
+    l_rollover_a: off
+    l_rollover_r: off
+    l_rollover_p: off
+    l_rollover_e: off
+- duration: 1
+  lights:
+    l_rollover_s: on
+    l_rollover_h: on
+    l_rollover_a: on
+    l_rollover_r: on
+    l_rollover_p: on
+    l_rollover_e: on
+- duration: 1
+  lights:
+    l_rollover_s: off
+    l_rollover_h: off
+    l_rollover_a: off
+    l_rollover_r: off
+    l_rollover_p: off
+    l_rollover_e: off
+- duration: 1
+  lights:
+    l_rollover_s: on
+- duration: 1
+  lights:
+    l_rollover_h: on
+- duration: 1
+  lights:
+    l_rollover_a: on
+- duration: 1
+  lights:
+    l_rollover_r: on
+- duration: 1
+  lights:
+    l_rollover_p: on
+- duration: 1
+  lights:
+    l_rollover_e: on
+- duration: 1
+  lights:
+    l_rollover_s: off
+    l_rollover_h: off
+    l_rollover_a: off
+    l_rollover_r: off
+    l_rollover_p: off
+    l_rollover_e: off
+- duration: 1
+  lights:
+    l_rollover_s: on
+    l_rollover_h: on
+    l_rollover_a: on
+    l_rollover_r: on
+    l_rollover_p: on
+    l_rollover_e: on
+- duration: 1
+  lights:
+    l_rollover_s: off
+    l_rollover_h: off
+    l_rollover_a: off
+    l_rollover_r: off
+    l_rollover_p: off
+    l_rollover_e: off
+- duration: 1
+  lights:
+    l_rollover_s: on
+    l_rollover_h: on
+    l_rollover_a: on
+    l_rollover_r: on
+    l_rollover_p: on
+    l_rollover_e: on

@@ -13,10 +13,26 @@ mode_settings:
 slide_player:
   mode_attract_started: attract
 
-sound_player:
+show_player:
   mode_attract_started:
-    GoodBadUgly:
-      bus: music
+    show_attract_modes:
+      speed: 4
+    show_attract_kick_out:
+      speed: 4
+    show_attract_drop_targets:
+      speed: 4
+    show_attract_inlanes:
+      speed: 4
+
+sound_player:
+  timer_attract_catcall_timer_complete{machine.last_catcall_callout == 1}:
+    howdyFolks:
+      bus: voice
+      events_when_stopped: attract_catcall_end
+  timer_attract_catcall_timer_complete{machine.last_catcall_callout == 0}:
+    yallComeBack:
+      bus: voice
+      events_when_stopped: attract_catcall_end
 
 timers:
   attract_carousel_timer:
@@ -32,3 +48,18 @@ timers:
         action: restart
       - event: carousel_item_highlighted
         action: restart
+  attract_catcall_timer:
+    end_value: 1
+    tick_interval: 5s
+    start_running: false
+    control_events:
+      - event: mode_attract_started
+        action: restart
+      - event: attract_catcall_end
+        action: restart
+
+variable_player:
+  attract_catcall_end:
+    last_catcall_callout:
+      action: set_machine
+      int: 0 if machine.last_catcall_callout + 1 >= 2 else machine.last_catcall_callout + 1

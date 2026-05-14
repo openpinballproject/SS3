@@ -12,6 +12,28 @@ config:
   - config_coils.yaml
   - config_lights.yaml
   - config_switches.yaml
+  - variables.yaml
+
+#HRS:  This doesn't work and doesn't give an error
+#light_groups:
+#  light_group_mode_lights:
+#    lights:
+#      - l_shoot_again
+#      - l_mode_sharpe
+#      - l_mode_sniper
+#      - l_mode_track_bandit
+#      - l_mode_check_hideout
+#      - l_mode_kill_all
+#      - l_mode_target_practice
+#      - l_mode_bar_fight
+#      - l_mode_hustle_jive
+#      - l_mode_duel
+#      - l_mode_posse
+#      - l_mode_ride_for_help
+#      - l_rookie
+#      - l_deputy
+#      - l_sheriff
+#      - l_marshal
 
 modes:
   - attract

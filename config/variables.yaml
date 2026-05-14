@@ -1,0 +1,21 @@
+#config_version=6
+
+machine_vars:
+  last_catcall_callout:
+    initial_value: 0
+    persist: false
+    value_type: int
+
+player_vars:
+  inlanes_hit:
+    initial_value: 0
+    value_type: int
+  drop_targets_hit:
+    initial_value: 0
+    value_type: int
+  modes_completed:
+    initial_value: 0
+    value_type: int
+  level:
+    initial_value: 0
+    value_type: int
